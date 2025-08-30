@@ -1,0 +1,49 @@
+.contact-section {
+    background: rgba(255,255,255,0.55);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(67,206,162,0.10);
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    backdrop-filter: blur(2px);
+}
+body {
+    background: url('img8.jpg') center center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+/* Add spacing to move resort address down */
+.resort-address {
+    margin-top: 3rem;
+}
+/* contat.css for Contact Page */
+.contact-section h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.contact-section form {
+    background: rgba(255,255,255,0.65);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    backdrop-filter: blur(2px);
+}
+.contact-section iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.contact-section .bi {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s;
+}
+.contact-section .bi:hover {
+    color: #0056b3;
+}
+@media (max-width: 768px) {
+    .contact-section .row {
+        flex-direction: column;
+    }
+    .contact-section form {
+        margin-bottom: 2rem;
+    }
+}

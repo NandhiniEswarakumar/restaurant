@@ -1,0 +1,109 @@
+
+
+.booknow-section {
+    flex: 1 0 auto;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('img1.jpg') center center/cover no-repeat;
+    border-radius: 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.booknow-section h2 {
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+    background: cadetblue;
+    
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 16px rgba(24,90,157,0.10), 0 2px 8px rgba(0,0,0,0.10);
+    font-size: 2.5rem;
+}
+
+form {
+    background: rgba(255,255,255,0.65);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    padding: 2.5rem 2rem 2rem 2rem;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #00796b;
+    letter-spacing: 0.5px;
+}
+
+.form-control, .form-select {
+    border-radius: 0.7rem !important;
+    border: 1.5px solid #b2dfdb;
+    background: #f8fffc;
+    font-size: 1.05rem;
+    transition: border-color 0.2s;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 0 2px #b2dfdb55;
+}
+
+.form-check-input:checked {
+    background-color: #00796b;
+    border-color: #00796b;
+}
+
+.form-check-label {
+    font-weight: 500;
+    color: #444;
+}
+
+.btn-success {
+    font-size: 1.18rem;
+    padding: 0.95rem;
+    border-radius: 0.8rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 6px 24px rgba(0,114,255,0.18), 0 2px 8px rgba(67,206,162,0.13);
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    outline: none;
+}
+.btn-success:hover, .btn-success:focus {
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff !important;
+    box-shadow: 0 12px 32px rgba(24,90,157,0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+
+
+
+@media (max-width: 768px) {
+    .booknow-section {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+    form {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        border-radius: 1rem;
+    }
+}
