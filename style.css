@@ -1,3 +1,26 @@
+/* Navbar custom styles for button spacing and mobile responsiveness (shared for all pages) */
+.navbar-nav .nav-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav.flex-row {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center !important;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .navbar-nav.flex-row .nav-item {
+        margin: 0.3rem 0.5rem;
+        width: auto;
+    }
+    .navbar-nav.flex-row .nav-link {
+        width: auto;
+        text-align: center;
+    }
+}
 /* Instagram Feed Preview Styles */
 .instagram-feed-section {
     border-radius: 14px;
