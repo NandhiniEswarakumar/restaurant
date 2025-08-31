@@ -10,30 +10,31 @@
 <body>
     <div class="page-content">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Podhigai Thottam Resort</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a class="navbar-brand" href="index.html">Podhigai Thottam Resort</a>
+            <ul class="navbar-nav flex-row ms-auto mb-2 mb-lg-0" style="flex-wrap: wrap;">
+              <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item mx-2"><a class="nav-link active" href="service.html">Services</a></li>
+               <li class="nav-item mx-2"><a class="nav-link" href="booknow.html">Book Now</a></li>
+              <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
 
       <!-- Services Section -->
       <section class="services-section py-5">
         <div class="container">
           <h2 class="text-center mb-5">Our Services</h2>
-          <div class="row g-4">
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+          <!-- Filter Bar -->
+          
+          <div class="row g-4" id="services-list">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="stay">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Private balcony, garden view, king bed, AC, WiFi</p>
+                </div>
                 <img src="img1.jpg" class="card-img-top" alt="Accommodation">
                 <div class="card-body">
                   <h5 class="card-title">Cozy Wooden Cottage</h5>
@@ -41,8 +42,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="wellness">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Heated pool, kids area, poolside snacks</p>
+                </div>
                 <img src="img2.jpg" class="card-img-top" alt="Dining">
                 <div class="card-body">
                   <h5 class="card-title">Indoor Swimming Pool</h5>
@@ -50,8 +54,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="activities">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Evening lights, bird watching, benches</p>
+                </div>
                 <img src="img3.jpg" class="card-img-top" alt="Activities">
                 <div class="card-body">
                   <h5 class="card-title">Garden View Pathway</h5>
@@ -59,8 +66,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="wellness">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Sunbeds, pool bar, towels provided</p>
+                </div>
                 <img src="img8.jpg" class="card-img-top" alt="Spa & Wellness">
                 <div class="card-body">
                   <h5 class="card-title">Poolside Relaxation Area</h5>
@@ -68,8 +78,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="stay">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Open air, heritage design, easy access</p>
+                </div>
                 <img src="img5.jpg" class="card-img-top" alt="Swimming Pool">
                 <div class="card-body">
                   <h5 class="card-title">Traditional Courtyard</h5>
@@ -77,8 +90,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="wellness">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Private jacuzzi, spa menu, aromatherapy</p>
+                </div>
                 <img src="img6.jpg" class="card-img-top" alt="Banquet & Events">
                 <div class="card-body">
                   <h5 class="card-title">Jacuzzi & Spa Corner</h5>
@@ -86,8 +102,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="activities">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Shaded, outdoor seating, garden view</p>
+                </div>
                 <img src="img10.jpg" class="card-img-top" alt="Kids Play Area">
                 <div class="card-body">
                   <h5 class="card-title">Private Parking & Outdoor Lounge</h5>
@@ -95,8 +114,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="stay">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Shallow, safe, lifeguard on duty</p>
+                </div>
                 <img src="img4.jpg" class="card-img-top" alt="Organic Farm">
                 <div class="card-body">
                   <h5 class="card-title">Kids-Friendly Pool</h5>
@@ -104,8 +126,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="activities">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Local sightseeing, nature walks, history</p>
+                </div>
                 <img src="img9.jpg" class="card-img-top" alt="Guided Tours">
                 <div class="card-body">
                   <h5 class="card-title">Guided Tours</h5>
@@ -113,8 +138,11 @@
                 </div>    
               </div>
             </div>
-            <div class="col-md-4 animate__animated animate__fadeInUp">
-              <div class="card h-100 shadow service-card">
+            <div class="col-md-4 animate__animated animate__fadeInUp service-item" data-category="activities">
+              <div class="card h-100 shadow service-card interactive-card">
+                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-info">
+                  <p class="text-white small mb-0">Bonfire, music, snacks, stargazing</p>
+                </div>
                 <img src="img7.jpg" class="card-img-top" alt="Bonfire Nights">
                 <div class="card-body">
                   <h5 class="card-title">Poolside Relaxation Area</h5>
@@ -123,7 +151,29 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
+    <script>
+      // Service filter functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const serviceItems = document.querySelectorAll('.service-item');
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            serviceItems.forEach(item => {
+              if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = '';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
     </div>
 
    <footer class="bg-dark text-white text-center py-3">
